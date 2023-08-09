@@ -9,6 +9,6 @@ serve:
 #Usage: make new file=aaa/bbb.md
 new:
 	make up
-	docker compose exec hugo hugo new $(file)
+	docker compose exec hugo hugo new src/$(file)
 
 .PHONY: build up serve new
