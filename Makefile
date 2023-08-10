@@ -1,5 +1,5 @@
 build:
-	docker compose build
+	docker compose exec hugo hugo build
 up :
 	docker compose up -d
 serve:
