@@ -4,8 +4,7 @@ up :
 	docker compose up -d
 serve:
 	make up
-	# docker compose exec hugo hugo server -D
-	docker compose exec hugo hugo server
+	docker compose exec hugo hugo server -D -t hugo-geekdoc
 
 #Usage: make new file=aaa/bbb.md
 new:
